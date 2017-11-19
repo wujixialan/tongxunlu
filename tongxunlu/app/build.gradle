@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.zxg.tongxunlu"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    testCompile 'junit:junit:4.12'
+
+    // https://mvnrepository.com/artifact/com.googlecode.libphonenumber/geocoder
+    compile group: 'com.googlecode.libphonenumber', name: 'geocoder', version: '2.80'
+
+    // https://mvnrepository.com/artifact/com.googlecode.libphonenumber/libphonenumber
+    compile group: 'com.googlecode.libphonenumber', name: 'libphonenumber', version: '8.8.4'
+// https://mvnrepository.com/artifact/com.googlecode.libphonenumber/prefixmapper
+    compile group: 'com.googlecode.libphonenumber', name: 'prefixmapper', version: '2.80'
+
+    // https://mvnrepository.com/artifact/com.googlecode.libphonenumber/carrier
+    compile group: 'com.googlecode.libphonenumber', name: 'carrier', version: '1.72'
+
+
+}

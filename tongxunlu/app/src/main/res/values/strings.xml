@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">通讯录</string>
+
+    <string name="editButton">编辑</string>
+    <string name="textView">联系人</string>
+    <string name="relation">还没有联系人</string>
+    <string name="name">请输入姓名</string>
+    <string name="number">电话号码</string>
+    <string name="telNumber">请输入手机号码</string>
+    <string name="cancel">取消</string>
+    <string name="ok">完成</string>
+
+    <string name="phone_number">电话号码</string>
+    <string name="numberInput">请输入号码</string>
+    <string name="sms">短信</string>
+    <string name="sms_content">请输入短信</string>
+    <string name="btn_main_call">打电话</string>
+    <string name="btn_main_send">发短信</string>
+    <string name="back">返回</string>
+
+    <string name="search">查找联系人</string>
+</resources>
